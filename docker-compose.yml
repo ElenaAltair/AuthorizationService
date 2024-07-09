@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  myapp:
+    build: ./ # сначала собрать образ для этого контейнера
+    image: authorizationservice-myapp
+    ports:
+      - 8080:8080
+
+
